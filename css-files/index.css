@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "logofont";
+  src: url("/assets/fonts/Norse-Bold.woff2") format("woff2"), url("/assets/fonts/Norse-Bold.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  height: 100vh;
+  width: 100vh;
+  display: flex;
+  border: solid green;
+  background-color: yellow;
+}
+
+#hero {
+  display: flex;
+  height: 100vh;
+  width: 200px;
+  border: solid red;
+}
+
+#banner {
+  display: flex;
+  border: purple;
+}
