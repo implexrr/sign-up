@@ -7,21 +7,73 @@
 }
 
 body {
-  height: 100vh;
-  width: 100vh;
   display: flex;
+  height: 100vh;
+  width: 100%;
   border: solid green;
-  background-color: yellow;
+}
+
+#hero-container {
+  border: solid 5px black;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-image: url(/assets/images/viking-ship-by-fjord-in-western-norway.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#photo-caption {
+  text-align: end;
+  height: 5%;
 }
 
 #hero {
   display: flex;
-  height: 100vh;
-  width: 200px;
+  flex-direction: column;
+  height: 95%;
+  align-items: center;
+  justify-content: center;
   border: solid red;
 }
 
 #banner {
   display: flex;
-  border: purple;
+  height: 100px;
+  width: 100%;
+  border: solid purple;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 900;
+  font-size: 2.5em;
+  font-family: 'logofont', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
 }
+
+#form-container {
+  display: flex;
+  height: 100%;
+  width: 900px;
+  flex-grow: 0;
+  justify-content: center;
+  align-items: center;
+  border: solid yellow;
+  background-color: aliceblue;
+}
+
+#odin-logo {
+  height: 100px;
+  width: 100px;
+  max-width: 100px;
+  min-width: 100px;
+  max-height: 100px;
+  max-width: 100px;
+  border: solid 3px yellow;
+  background-image: url(/assets/images/odin-lined.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
