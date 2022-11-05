@@ -90,18 +90,15 @@ body {
   justify-content: center;
   align-items: center;
   justify-content: space-between;
-
   background-color: rgb(18, 17, 38);
   color: rgb(244, 241, 236);
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', 'Open Sans', sans-serif;
 }
 
 #form-container * {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
-  font-weight: 900;
   box-sizing: border-box;
 }
 
@@ -111,10 +108,12 @@ body {
   align-items: flex-start;
   justify-content: space-between;
   margin: 2rem;
-
+  font-size: 23px;
+  font-weight: 500;
+  opacity: 0.8;
 }
 
-#encourage {
+.encourage {
   margin-top: 10px; 
 }
 
@@ -123,7 +122,8 @@ body {
   height: 50%;
   width: 100%;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  /* border: solid green; */
 }
 
 #duplicate-account {
@@ -132,14 +132,47 @@ body {
 }
 
 form {
+  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-wrap: wrap;
+  color: rgb(174, 174, 174);
+  /* border: solid red; */
 }
 
+#form-prompt {
+  font-size: 20px;
+  font-weight: 500;
+  opacity: 0.8;
+  /* border: solid red; */
+}
 
+.label-input-pair {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 1%
+}
 
+input, label {
+  width: 100%;
+  max-width: 100%;
+}
+
+label {
+  display: block;
+  /* border:solid rgb(216, 72, 15); */
+  padding-right: 45%;
+}
 #login {
   color:blueviolet
+}
+
+.form-row {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 1%;
 }
 
 @media only screen and (max-width: 960px) {
