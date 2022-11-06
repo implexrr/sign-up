@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="/css-files/index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">  <title>Odin Sign-up</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
   <div id="hero-container">
@@ -44,36 +44,36 @@
       <form>
         <div class="form-row">
           <div class="label-input-pair">
-            <label for="full-name">FULL NAME</label>
-            <input id="full-name" name="user-full-name" type="text" placeholder="Thor Odison">
+            <label for="fullname">FULL NAME *</label>
+            <input id="fullname" name="fullname" type="text" placeholder="Thor Odison" required>
           </div>
           <div class="label-input-pair">
-            <label for="full-name">FULL NAME</label>
-            <input id="full-name" name="user-full-name" type="text" placeholder="Thor Odison">
+            <label for="username">USERNAME *</label>
+            <input id="username" name="username" type="text" placeholder="TheHammer1337" required>
           </div>
         </div>
         <div class="form-row">
           <div class="label-input-pair">
-            <label for="full-name">FULL NAME</label>
-            <input id="full-name" name="user-full-name" type="text" placeholder="Thor Odison">
+            <label for="email">EMAIL *</label>
+            <input id="email" name="email" type="email" placeholder="thor@norsemail.asgard" required>
           </div>
           <div class="label-input-pair">
-            <label for="full-name">FULL NAME</label>
-            <input id="full-name" name="user-full-name" type="text" placeholder="Thor Odison">
+            <label for="phone">PHONE</label>
+            <input id="phone" name="phone" type="tel">
           </div>        </div>
         <div class="form-row">
           <div class="label-input-pair">
-            <label for="full-name">FULL NAME</label>
-            <input id="full-name" name="user-full-name" type="text" placeholder="Thor Odison">
+            <label for="password">PASSWORD *</label>
+            <input id="password" name="password" type="password" required>
           </div>
           <div class="label-input-pair">
-            <label for="full-name">FULL NAME</label>
-            <input id="full-name" name="user-full-name" type="text" placeholder="Thor Odison">
-          </div>        </div>
-        <div class="form-row">
+            <label for="confirmation">CONFIRM PASSWORD *</label>
+            <input id="confirmation" name="confirmation" type="password" required>
+          </div>
+        </div>
+        <div class="form-row button-row">
           <button>Create account</button>
         </div>
-        
       </form>
 
 
