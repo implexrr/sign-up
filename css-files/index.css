@@ -175,8 +175,18 @@ label {
   display: flex;
 }
 
+#question {
+  font-size: 1rem;
+}
+
 #login {
-  color:rgb(76, 43, 226)
+  appearance: none;
+  color:rgb(76, 43, 226);
+  border: none; 
+  background-color: transparent;
+  font-family: 'Poppins', 'Open Sans', sans-serif;
+  font-size: 1rem;
+  transition: 0.5s;
 }
 
 label {
@@ -195,12 +205,12 @@ input {
   margin-top: 10px;
   color: white;
   border: none;
-  background-color: rgba(75, 74, 78, 0.123);
+  background-color: rgba(75, 74, 78, 0.122);
   font-family: 'Poppins', 'Open Sans', sans-serif;
-
+  transition: 0.5s;
 }
 
-button {
+#create {
   box-sizing: border-box;
   height: 3rem;
   margin-bottom: 0.5rem;
@@ -209,6 +219,50 @@ button {
   border: none;
   color: white;
   background-color: rgb(58, 42, 199);
+  opacity: 0.75;
   font-family: 'Poppins', 'Open Sans', sans-serif;
-
+  transition: 0.5s;
 }
+
+#create:hover {
+ opacity: 1;
+ transition: 0.5s;
+}
+
+
+input:hover, input:focus {
+  background-color: rgba(58, 42, 199, 0.451);
+  outline: none;
+  transition: 0.5s;
+}
+
+#login:hover {
+  color: white;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+/* input:required:valid {
+  background-color: green;
+} */
+
+input + span {
+  position: relative;
+}
+
+input + span::before {
+  position: absolute;
+  right: 10px;
+  top: -34px;
+}
+
+input:invalid:focus + span::before {
+  content: "✖";
+  color: red;
+}
+
+input:valid + span::before {
+  content: "✓";
+  color: green;
+}
+

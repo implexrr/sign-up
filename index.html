@@ -45,34 +45,35 @@
         <div class="form-row">
           <div class="label-input-pair">
             <label for="fullname">FULL NAME *</label>
-            <input id="fullname" name="fullname" type="text" placeholder="Thor Odison" required>
+            <input id="fullname" name="fullname" type="text" placeholder="Thor Odison" value="" required>
+            <span></span>
           </div>
           <div class="label-input-pair">
             <label for="username">USERNAME *</label>
-            <input id="username" name="username" type="text" placeholder="TheHammer1337" required>
+            <input id="username" name="username" type="text" placeholder="TheHammer1337" value="" required>
           </div>
         </div>
         <div class="form-row">
           <div class="label-input-pair">
             <label for="email">EMAIL *</label>
-            <input id="email" name="email" type="email" placeholder="thor@norsemail.asgard" required>
+            <input id="email" name="email" type="email" placeholder="thor@norsemail.asgard" value="" required>
           </div>
           <div class="label-input-pair">
             <label for="phone">PHONE</label>
-            <input id="phone" name="phone" type="tel">
+            <input id="phone" name="phone" type="tel" placeholder=" " value="">
           </div>        </div>
         <div class="form-row">
           <div class="label-input-pair">
             <label for="password">PASSWORD *</label>
-            <input id="password" name="password" type="password" required>
+            <input id="password" name="password" type="password" placeholder=" " value="" required>
           </div>
           <div class="label-input-pair">
             <label for="confirmation">CONFIRM PASSWORD *</label>
-            <input id="confirmation" name="confirmation" type="password" required>
+            <input id="confirmation" name="confirmation" type="password" placeholder=" " value="" required>
           </div>
         </div>
         <div class="form-row button-row">
-          <button>Create account</button>
+          <button id="create">Create account</button>
         </div>
       </form>
 
@@ -86,11 +87,10 @@
       <div id="question">
         Already have an account?
       </div>
-      <div id="login">
-        &nbsp Log in
-      </div>
+      <button id="login">Log in</button>
     </div>
   </div>
   
+  <script src="/js-files/index.js"></script>
 </body>
 </html>
