@@ -51,17 +51,28 @@
           <div class="label-input-pair">
             <label for="username">USERNAME *</label>
             <input id="username" name="username" type="text" placeholder="TheHammer1337" value="" required>
+            <span></span>
           </div>
         </div>
         <div class="form-row">
           <div class="label-input-pair">
             <label for="email">EMAIL *</label>
-            <input id="email" name="email" type="email" placeholder="thor@norsemail.asgard" value="" required>
+            <input id="email" name="email" type="email" placeholder="thor@norsemail.asgard" value="" 
+            oninvalid="this.setCustomValidity('Please enter a valid email address')"
+            oninput="this.setCustomValidity('')"
+            required>
+            <span></span>
           </div>
           <div class="label-input-pair">
-            <label for="phone">PHONE</label>
-            <input id="phone" name="phone" type="tel" placeholder=" " value="">
-          </div>        </div>
+            <label for="phone">PHONE *</label>
+            <input id="phone" name="phone" type="tel" placeholder=" " 
+            pattern="(\+)?([0-9])+([\-])?([0-9])+([\-])?([0-9])+" 
+            oninvalid="this.setCustomValidity('Please enter a valid phone number')"
+            oninput="this.setCustomValidity('')"
+            required>
+            <span></span>
+          </div>        
+        </div>
         <div class="form-row">
           <div class="label-input-pair">
             <label for="password">PASSWORD *</label>
