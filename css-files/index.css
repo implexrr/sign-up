@@ -1,3 +1,4 @@
+/* Import "Norse bold font" */
 @font-face {
   font-family: "logofont";
   src: url("/assets/fonts/Norse-Bold.woff2") format("woff2"), url("/assets/fonts/Norse-Bold.woff")
@@ -6,10 +7,12 @@
   font-style: normal;
 }
 
+/* Change color scheme for input so autofill isn't as ugly */
 input {
   color-scheme: dark;
 }
 
+/* Eliminate potential scrollbar issues */
 html, body {
   margin: 0;
   padding: 0;
@@ -17,13 +20,15 @@ html, body {
 
 body {
   display: flex;
-  margin: 0;
-  padding: 0;
   height: 100vh;
   max-height: 100vh;
   width: 100%;
 }
 
+/* Code for left side of sign-up page */
+/* ---------------------------------------------------------------------- */
+
+/* Set background for hero container */
 #hero-container {
   display: flex;
   flex-direction: column;
@@ -34,6 +39,7 @@ body {
   background-size: cover;
 }
 
+/* Create photo caption and stick it to the right side of the hero */
 #photo-caption {
   padding-right: 20px;
   text-align: end;
@@ -89,6 +95,10 @@ body {
   padding-right: 30px;
 }
 
+/* Code for right side of sign-up page */
+/* ---------------------------------------------------------------------- */
+
+/* Set up initial right-side layout */
 #form-container {
   display: flex;
   flex-direction: column;
@@ -116,10 +126,12 @@ body {
   scrollbar-width: none;  /* Firefox */
 }
 
+/* Prevent unecessary overflow */
 #form-container * {
   box-sizing: border-box;
 }
 
+/* Style initial pitch to user */
 #description {
   display: flex;
   flex-direction: column;
@@ -131,12 +143,11 @@ body {
   font-weight: 500;
   opacity: 0.8;
 }
-
 .encourage {
   margin: 3% 0%;
 }
 
-
+/* Add seperator between description and main form via box-shadows */
 #main-form {
   box-sizing: border-box;
   width: 100%;
@@ -152,6 +163,7 @@ body {
   opacity: 0.8;
 }
 
+/* Style each row of the form */
 .form-row {
   display: flex;
   width: 100%;
@@ -159,6 +171,7 @@ body {
   justify-content: space-around;
 }
 
+/* Style each row element of the form */
 .label-input-pair {
   box-sizing: border-box;
   width: 100%;
@@ -183,6 +196,7 @@ label {
   font-size: 1rem;
 }
 
+/* Style login prompt button at bottom */
 #login {
   appearance: none;
   color:rgb(76, 43, 226);
@@ -198,6 +212,7 @@ label {
   padding-left: 10px;
 }
 
+/* Style inputs */
 input {
   box-sizing: border-box;
   appearance: none;
@@ -214,6 +229,7 @@ input {
   transition: 0.5s;
 }
 
+/* Style Create Account button */
 #create {
   box-sizing: border-box;
   height: 3rem;
@@ -227,6 +243,33 @@ input {
   font-family: 'Poppins', 'Open Sans', sans-serif;
   transition: 0.5s;
 }
+
+/* ANIMATIONS */
+/* ---------------------------------------------------------------------- */
+
+/* Create shaking animation */
+@-webkit-keyframes shake {
+  0% { -webkit-transform: translate(2px, 1px) rotate(0deg); } 
+  10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+  30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+  40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+  50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+  70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+  80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+  90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+  100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.shake {
+-webkit-animation-name: shake;
+-webkit-animation-duration: 0.5s;
+-webkit-transform-origin:50% 50%;
+-webkit-animation-iteration-count: infinite;
+display:inline-block
+}
+
 
 #create:hover {
  opacity: 1;
@@ -246,10 +289,7 @@ input:hover, input:focus {
   transition: 0.5s;
 }
 
-/* input:required:valid {
-  background-color: green;
-} */
-
+/* Add checkmarks/x marks depending on user input */
 input + span {
   position: relative;
 }
@@ -268,28 +308,4 @@ input + span::before {
 .confirmation:valid + span::before {
   content: "✓";
   color: green;
-}
-
-  @-webkit-keyframes shake {
-    0% { -webkit-transform: translate(2px, 1px) rotate(0deg); } 
-    10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
-    30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
-    40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
-    50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
-    70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
-    80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
-    90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
-    100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
-}
-
-.shake:hover {
-  -webkit-animation-name: shake;
-  -webkit-animation-duration: 0.5s;
-  -webkit-transform-origin:50% 50%;
-  -webkit-animation-iteration-count: infinite;
-}
-.shake {
-  display:inline-block
 }
