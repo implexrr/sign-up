@@ -1,6 +1,6 @@
 # Sign-up Form
 
-Sign-up is the first project from the [Intermediate HTML and CSS](https://www.theodinproject.com/paths/full-stack-javascript/courses/intermediate-html-and-css) section of [The Odin Project](https://www.theodinproject.com/paths/foundations/courses/foundations). It is intended to give students an opportunity to dive deeper into design principles and more advanced CSS concepts such as advanced selectors, CSS functions and custom properties. Working demo [here](https://implexrr.github.io/sign-up/).
+Sign-up is the first project from the [Intermediate HTML and CSS](https://www.theodinproject.com/paths/full-stack-javascript/courses/intermediate-html-and-css) section of [The Odin Project](https://www.theodinproject.com). It is intended to give students an opportunity to dive deeper into design principles and more advanced CSS concepts such as advanced selectors, CSS functions and custom properties. Working demo [here](https://implexrr.github.io/sign-up/).
 
 ![](./assets/images/sign-up-demo.png)
 
