@@ -274,6 +274,7 @@ display:inline-block
 #create:hover {
  opacity: 1;
  transition: 0.5s;
+ cursor: pointer
 }
 
 
@@ -287,6 +288,7 @@ input:hover, input:focus {
   color: white;
   opacity: 1;
   transition: 0.5s;
+  cursor: pointer
 }
 
 /* Add checkmarks/x marks depending on user input */
