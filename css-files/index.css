@@ -1,7 +1,7 @@
 /* Import "Norse bold font" */
 @font-face {
   font-family: "logofont";
-  src: url("/sign-up/assets/fonts/Norse-Bold.woff2") format("woff2"), url("/sign-up/assets/fonts/Norse-Bold.woff")
+  src: url("assets/fonts/Norse-Bold.woff2") format("woff2"), url("assets/fonts/Norse-Bold.woff")
       format("woff");
   font-weight: normal;
   font-style: normal;
@@ -33,7 +33,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  background-image: url(/sign-up/assets/images/night-sky.jpg);
+  background-image: url(../assets/images/night-sky.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -82,7 +82,7 @@ body {
   min-width: 100px;
   max-height: 100px;
   max-width: 100px;
-  background-image: url(/sign-up/assets/images/odin-lined.png);
+  background-image: url(../assets/images/odin-lined.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
