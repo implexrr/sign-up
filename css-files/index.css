@@ -1,7 +1,7 @@
 /* Import "Norse bold font" */
 @font-face {
   font-family: "logofont";
-  src: url("assets/fonts/Norse-Bold.woff2") format("woff2"), url("assets/fonts/Norse-Bold.woff")
+  src: url("../assets/fonts/Norse-Bold.woff2") format("woff2"), url("../assets/fonts/Norse-Bold.woff")
       format("woff");
   font-weight: normal;
   font-style: normal;
